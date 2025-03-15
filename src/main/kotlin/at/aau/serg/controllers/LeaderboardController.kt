@@ -18,6 +18,6 @@ class LeaderboardController(
         //gameResultService.getGameResults().sortedWith(compareBy({ -it.score }, { it.id }))
         gameResultService.getGameResults().sortedWith(
             compareBy<GameResult>() { -it.score }
-                .thenBy { it.timeInSeconds }
+                .thenBy { -it.timeInSeconds }
         )
 }
