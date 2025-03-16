@@ -50,9 +50,9 @@ class LeaderboardControllerTests {
 
         verify(mockedService).getGameResults()
         assertEquals(3, res.size)
-        assertEquals(first, res[0])
+        assertEquals(second, res[0])
         assertEquals(third, res[1])
-        assertEquals(second, res[2])
+        assertEquals(first, res[2])
     }
 
 }
